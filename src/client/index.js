@@ -5,4 +5,5 @@ console.log(checkForName);
 
 alert("I EXIST")
 alert("0-initial-setup test")
+alert('test2');
 console.log("CHANGE!!");
