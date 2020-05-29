@@ -2,12 +2,11 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 
 module.exports = {
     entry: './src/client/index.js',
-    mode: 'development',
-    devtool: 'source-map',
+
     stats: 'verbose',
     module: {
         rules: [{
@@ -16,14 +15,11 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
-                test: /\.scss$/,
-                exclude: /node_modules/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
-                    // test: /\.(css|sass|scss)$/,
-                    // use: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!sass-loader' })
-
+                test: '/\.scss$/',
+                use: ['style-loader', 'css-loader', 'ssss-loader']
             }
         ]
+
     },
     plugins: [
         new HtmlWebPackPlugin({
