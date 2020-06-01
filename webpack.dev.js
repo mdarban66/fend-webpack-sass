@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
+
     entry: './src/client/index.js',
     mode: 'development',
     devtool: 'source-map',
